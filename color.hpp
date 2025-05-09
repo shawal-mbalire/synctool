@@ -1,10 +1,12 @@
 #include <iostream>
 
-#ifndef MY_LIBRARY_H
-#define MY_LIBRARY_H
+#ifndef COLOR_LIBRARY_H
+#define COLOR_LIBRARY_H
 
 namespace color
 { 
+  // giving color to terminal text using ANSI escape codes.
+  // noworry about background as that is not  needed
   std::string red_string(std::string msg){
     std::string err_str = "\033[31m"+msg+"\033[0m";
     return err_str;

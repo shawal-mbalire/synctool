@@ -1,5 +1,6 @@
 #include <iostream>
 #include "color.hpp"
+#include "features.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -39,14 +40,48 @@ int main(int argc, char *argv[])
     }
     else if (command == "sync")
     {
+        // must have two arguments src and dst
+        if (argc < 4)
+        {
+            std::cerr << color::red_string("Error: Backup requires 2 arguments src and destination.") << std::endl;
+            std::cout << "\n...Sync Tool - Ending\n"
+                      << std::endl;
+            return 1;
+        }
+        std::string source = argv[2];
+        std::string destin = argv[3];
     }
     else if (command == "check")
     {
+        // must have two arguments src and dst
+        if (argc < 4)
+        {
+            std::cerr << color::red_string("Error: Backup requires 2 arguments src and destination.") << std::endl;
+            std::cout << "\n...Sync Tool - Ending\n"
+                      << std::endl;
+            return 1;
+        }
+        std::string source = argv[2];
+        std::string destin = argv[3];
     }
     else if (command == "ddup")
     {
+        // must have two arguments src and dst
+        if (argc < 4)
+        {
+            std::cerr << color::red_string("Error: Backup requires 2 arguments src and destination.") << std::endl;
+            std::cout << "\n...Sync Tool - Ending\n"
+                      << std::endl;
+            return 1;
+        }
+        std::string source = argv[2];
+        std::string destin = argv[3];
     }
     // can I add feature to read external devices list them and use and sources.
+    else if (command == "list")
+    {
+        features::list();
+    }
 
     std::cout << "\n...Sync Tool - Ending\n"
               << std::endl;
