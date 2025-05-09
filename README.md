@@ -63,44 +63,46 @@ cd build
 
 # Example: Get help
 ./sync_tool --help
+```
 
-Development Progress
+## Development Progress
 
 Use this section to track your progress towards the Definitions of Done. Update the checkboxes, list completed milestones, or note your current focus.
 
-    [ ] CLI Argument Parsing: Set up command-line argument handling.
-    [ ] Repository Initialization: Logic to create the destination repository directory structure.
-    [ ] File Traversal: Implement recursive directory traversal.
-    [ ] File Chunking: Implement logic to read files and split into fixed-size chunks.
-    [ ] Hashing: Integrate a hashing algorithm (e.g., SHA-256) to compute chunk hashes.
-    [ ] Chunk Storage: Implement logic to save unique chunks to the repository based on their hash.
-    [ ] Metadata Definition: Design the format and structure for storing file metadata.
-    [ ] Metadata Storage: Implement logic to save file metadata to the repository.
-    [ ] Initial Backup Logic: Implement the flow for the first backup run.
-    [ ] Synchronization Logic: Implement the comparison and update logic for subsequent runs.
-    [ ] Integrity Check Logic: Implement the function to verify repository consistency.
-    [ ] Basic Error Handling: Add checks and messages for common errors.
-    [ ] Documentation: Complete basic usage instructions in the README.
+* [ ] CLI Argument Parsing: Set up command-line argument handling.
+* [ ] Repository Initialization: Logic to create the destination repository directory structure.
+* [ ] File Traversal: Implement recursive directory traversal.
+* [ ] File Chunking: Implement logic to read files and split into fixed-size chunks.
+* [ ] Hashing: Integrate a hashing algorithm (e.g., SHA-256) to compute chunk hashes.
+* [ ] Chunk Storage: Implement logic to save unique chunks to the repository based on their hash.
+* [ ] Metadata Definition: Design the format and structure for storing file metadata.
+* [ ] Metadata Storage: Implement logic to save file metadata to the repository.
+* [ ] Initial Backup Logic: Implement the flow for the first backup run.
+* [ ] Synchronization Logic: Implement the comparison and update logic for subsequent runs.
+* [ ] Integrity Check Logic: Implement the function to verify repository consistency.
+* [ ] Basic Error Handling: Add checks and messages for common errors.
+* [ ] Documentation: Complete basic usage instructions in the README.
 
-Completed Milestones:
+## Completed Milestones
 
     [Date] - Initial CMake project setup and successful build.
     [Date] - Implemented basic CLI structure using [Library Name, if any].
     [Date] - ...
 
-Currently Working On: [Specify your current task, e.g., Implementing the fixed-size file chunking logic.]
-Future Enhancements
+## Currently Working On
 
-[Optional: List ideas for features you might add after the MVP is complete]
+[Specify your current task, e.g., Implementing the fixed-size file chunking logic.]
 
-    Variable-size chunking
-    Encryption
-    Handling symbolic links
-    Progress indicators
-    Network sync capabilities
-    Different backup versions/restoration points
-    Parallel processing
+## Future Enhancements
 
-License
+* Variable-size chunking
+* Encryption
+* Handling symbolic links
+* Progress indicators
+* Network sync capabilities
+* Different backup versions/restoration points
+* Parallel processing
 
-This project is licensed under the MIT License. See the https://www.google.com/search?q=LICENSE file for details.
+## License
+
+This project is licensed under the MIT License.

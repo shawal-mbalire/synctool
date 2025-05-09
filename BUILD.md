@@ -1,6 +1,6 @@
-# Building the project.
+# Building the project
 
-to build the project, run the following command. 
+To build the project, run the following command.
 
 ```sh
 cd build
