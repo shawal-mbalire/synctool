@@ -20,6 +20,9 @@ namespace features{
     void list(){
         std::cout << color::blue_string("Listing devices")<< std::endl;
     }
+    void help(){
+       std::cout << color::blue_string("Help")<< std::endl; 
+    }
 }
 
 #endif
